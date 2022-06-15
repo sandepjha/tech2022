@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action=""method="POST">
+    {% for form in fm %}
+    {{form.lebel_tag}}{{form}}{{form.errors|striptags}}
+    {% endfor %}
+</form>
+{% endblock content %}
+
